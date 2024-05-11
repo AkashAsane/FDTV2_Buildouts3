@@ -19,11 +19,13 @@ function Page() {
       )
       .then((response) => {
         setData(response.data);
+        setError(null);
         console.log(response.data);
       })
       .catch((error) => {
         setError(error);
         console.error("failed to fetch data", error);
+        alert("Failed to fetch data");
       });
   };
 
@@ -72,7 +74,7 @@ function Page() {
 
       <div className="pages">
         <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
-        <span className="currentpage">{`${currentPage} `}</span>
+        <span className="currentpage">{currentPage}</span>
         <button onClick={nextPage} disabled={currentPage === totalPages}>Next</button>
       </div>
     </div>
