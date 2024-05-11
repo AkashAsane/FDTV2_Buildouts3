@@ -1,0 +1,52 @@
+.mainwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tablewrapper{
+   border-collapse: collapse;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.tabletitle th{
+    text-align: start;
+    width: 300px;
+    padding: 10px;
+    background-color: #056B52;
+    color: white;
+}
+
+
+.tablerole td{
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    
+}
+
+.tablerole {
+    border: 1px solid black;
+}
+
+.pages{
+    margin-top: 20px;
+}
+
+.pages button{
+    background-color: #056B52;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+} 
+
+.currentpage{
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #056B52;
+    color: white;
+    border-radius: 5px;
+}
