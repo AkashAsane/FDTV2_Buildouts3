@@ -54,8 +54,8 @@ function Page() {
           <tr className="tabletitle">
             <th>Id</th>
             <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
+            <th>Email</th>
+            <th>Role</th>
           </tr>
         </thead>
         <tbody>
@@ -74,7 +74,7 @@ function Page() {
 
       <div className="pages">
         <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
-        <span className="currentpage">{currentPage}</span>
+        <span className="currentpage">{`${currentPage}`}</span>
         <button onClick={nextPage} disabled={currentPage === totalPages}>Next</button>
       </div>
     </div>
