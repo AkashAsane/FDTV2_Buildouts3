@@ -30,7 +30,8 @@ function Page() {
   };
 
 
-    const totalPages= Math.ceil(data.length/10);
+  const totalPages = data.length > 0 ? Math.ceil(data.length / 10) : 0;
+
     const startIndex=(currentPage-1)*10;
     const endIndex=Math.min(startIndex +10 ,data.length);
     
@@ -45,6 +46,8 @@ function Page() {
         setCurrentPage(currentPage - 1);
       }
     }
+    
+    
     
 
 
