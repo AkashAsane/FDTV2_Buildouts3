@@ -25,7 +25,7 @@ function Page() {
       .catch((error) => {
         setError(error);
         console.error("failed to fetch data", error);
-        alert("Failed to fetch data");
+        alert("failed to fetch data");
       });
   };
 
