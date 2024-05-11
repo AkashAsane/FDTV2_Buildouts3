@@ -34,13 +34,18 @@ function Page() {
     const startIndex=(currentPage-1)*10;
     const endIndex=Math.min(startIndex +10 ,data.length);
     
-    const nextPage=()=>{
-      setCurrentPage((prevPage)=>Math.min(prevPage +1,totalPages));
+    const nextPage = () => {
+      if (currentPage < totalPages) {
+        setCurrentPage(currentPage + 1);
+      }
     }
     
-    const prevPage=()=>{
-      setCurrentPage((prevPage)=>Math.max(prevPage-1,1));
+    const prevPage = () => {
+      if (currentPage > 1) {
+        setCurrentPage(currentPage - 1);
+      }
     }
+    
 
 
   return (
